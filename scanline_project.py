@@ -7,11 +7,11 @@ position = np.load('position_geo.npy')
 times_jd = np.load('times_jd.npy')
 imaging_windows = np.load('imaging_windows.npy', allow_pickle = True)
 
-LON = position[:, 1]
-LAT = position[:, 0]
+LON = position[:,1]
+LAT = position[:,0]
 
-target_latitude =  43.6532
-target_longitude =  -79.3832
+target_latitude = 43.6532
+target_longitude = -79.3832
 
 for window in imaging_windows:
   plt.plot(LON[window], LAT[window])
